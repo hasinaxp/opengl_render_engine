@@ -1,0 +1,12 @@
+I do not claim owenership or credits for any files in deps folder.
+All the credit goes to the respected productions of these libreries.
+I am greateful to the creative people who made this libs.
+
+#libs - 
+glad
+SDL2
+stb_image
+stb_image_write
+boost
+assimp
+glm
