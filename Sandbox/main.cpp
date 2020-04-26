@@ -15,6 +15,7 @@
 #include <control/noise.h>
 #include <list>
 #include <iostream>
+#include <cmath>
 
 using namespace sp;
 
@@ -74,6 +75,7 @@ class Game : public ApplicationLayer
 {
 public:
 	Game() :ApplicationLayer("game") {};
+	int r = 0.01;
 	void onInit() override {
 
 	}
@@ -86,7 +88,11 @@ public:
 		if (EventSystem::isPressedKey(KeyCode::escape)) Application::switchLayer("mainmenu");
 	}
 	void onRender() {
-
+		r = sin(this->getDeltaTime_s());
+		RenderCommand::setClearColor(glm::vec3(r, 0.4, 0.4));
+	}
+	void onExit() {
+		//Application::getMainDisplay()->focus();
 	}
 };
 

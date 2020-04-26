@@ -21,9 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{07F72E27-4883-451C-8C53-F2E1A88E29C8}</ProjectGuid>
-    <RootNamespace>Project2</RootNamespace>
+    <RootNamespace>Sandbox</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Sandbox</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -71,12 +70,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(SolutionDir)EudoraEngine;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)EudoraEngine/;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)bin\$(Configuration)$(PlatformTarget)\</OutDir>
     <IntDir>$(SolutionDir)binInt\$(Configuration)$(PlatformTarget)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(SolutionDir)EudoraEngine;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)EudoraEngine/;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)bin\$(Configuration)$(PlatformTarget)\</OutDir>
     <IntDir>$(SolutionDir)binInt\$(Configuration)$(PlatformTarget)\</IntDir>
   </PropertyGroup>

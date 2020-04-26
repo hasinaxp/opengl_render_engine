@@ -64,6 +64,7 @@ namespace sp {
 		static int getWidth() { return _display->getWidth(); }
 		static int getHeight() { return _display->getHeight(); }
 		static int getFrameRate() { return _frameRate; }
+		static Display* getMainDisplay() { return _display; }
 
 
 		static void setFrameRate(int frameRate) { _frameRate = frameRate; }
